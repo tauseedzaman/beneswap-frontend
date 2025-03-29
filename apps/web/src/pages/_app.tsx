@@ -103,10 +103,10 @@ function MyApp(props: AppProps<{ initialReduxState: any; dehydratedState: any }>
           name="description"
           content="Cheaper and faster than Uniswap? Discover PancakeSwap, the leading DEX on BNB Smart Chain (BSC) with the best farms in DeFi and a lottery for CAKE."
         />
-        <meta name="theme-color" content="#1FC7D4" />
+        <meta name="theme-color" content="" />
       </Head>
       <DefaultSeo {...SEO} />
-      {/* <LoadVConsole /> */}
+      <LoadVConsole />
       <Providers
         store={store}
         dehydratedState={pageProps.dehydratedState}
@@ -126,7 +126,7 @@ function MyApp(props: AppProps<{ initialReduxState: any; dehydratedState: any }>
           <App {...props} />
         </PersistGate>
       </Providers>
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         id="google-tag"
         dangerouslySetInnerHTML={{
@@ -138,7 +138,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','${process.env.NEXT_PUBLIC_NEW_GTAG}');
         `,
         }}
-      />
+      /> */}
     </>
   )
 }

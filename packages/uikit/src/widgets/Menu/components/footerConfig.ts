@@ -73,10 +73,6 @@ export const footerLinks: (t: ContextApi["t"]) => FooterLinkType[] = (t) => [
     label: t("Support"),
     items: [
       {
-        label: t("Get Help"),
-        href: "https://docs.pancakeswap.finance/contact-us/customer-support",
-      },
-      {
         label: t("Troubleshooting"),
         href: "https://docs.pancakeswap.finance/readme/help/troubleshooting",
       },

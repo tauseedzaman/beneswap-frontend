@@ -3,7 +3,6 @@ import { Text, Menu as UikitMenu, footerLinks, useModal } from '@pancakeswap/uik
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { usePhishingBanner } from '@pancakeswap/utils/user'
 import { NextLinkFromReactRouter } from '@pancakeswap/widgets-internal'
-import InfoStripes from 'components/AdPanel/InfoStripes'
 import USCitizenConfirmModal from 'components/Modal/USCitizenConfirmModal'
 import { NetworkSwitcher } from 'components/NetworkSwitcher'
 import { useActiveChainId } from 'hooks/useActiveChainId'
@@ -120,7 +119,8 @@ const Menu = (props) => {
         </>
       }
       chainId={chainId}
-      banner={showPhishingWarningBanner && typeof window !== 'undefined' && <InfoStripes />}
+      // banner={showPhishingWarningBanner && typeof window !== 'undefined' && <InfoStripes />}
+      banner={undefined}
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
